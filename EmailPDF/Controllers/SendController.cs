@@ -64,7 +64,7 @@ namespace EmailPDF.Controllers
             doc.Save(docOutStream, Aspose.Words.SaveFormat.Pdf);
             byte[] docBytes = docOutStream.ToArray();
             var file = Convert.ToBase64String(docBytes);
-            var client = new SendGridClient("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");
+            var client = new SendGridClient("Key");
             var myMessage = new SendGridMessage
             {
                 From = new EmailAddress("sarav1988k@gmail.com"),
